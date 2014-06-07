@@ -1,0 +1,77 @@
+# お問い合わせ詳細
+admin_details:
+    pattern:  /{id}
+    defaults: { _controller: SampleAdminBundle:Default:details }
+    methods:  [GET]
+    requirements:
+        id:  \d+
+
+# お問い合わせ返信
+admin_reply:
+    pattern:  /reply/{id}
+    defaults: { _controller: SampleAdminBundle:Default:reply }
+    methods:  [GET,POST]
+    requirements:
+        id:  \d+
+
+# 内容一覧
+admin_subjects:
+    pattern:  /subjects/{id}
+    defaults: { _controller: SampleAdminBundle:Default:subjects }
+    methods:  [GET]
+    requirements:
+        id:  \d+
+
+# 内容登録
+admin_subjects_new:
+    pattern:  /subjects/{id}
+    defaults: { _controller: SampleAdminBundle:Default:subjectsNew }
+    methods:  [GET,POST]
+    requirements:
+        id:  \d+
+
+# 内容編集・削除
+admin_subjects_edit:
+    pattern:  /subjects/edit/{id}
+    defaults: { _controller: SampleAdminBundle:Default:subjectsEdit }
+    methods:  [GET,POST]
+    requirements:
+        id:  \d+
+
+# 管理者追加
+admin_account_new:
+    pattern:  /account/new
+    defaults: { _controller: SampleAdminBundle:Default:accountNew }
+    methods:  [GET,POST]
+
+# 添付ダウンロード
+admin_download:
+    pattern:  /download/{id}
+    defaults: { _controller: SampleAdminBundle:Default:download }
+    methods:  [GET]
+    requirements:
+        id:  \d+
+
+# ログイン
+admin_login:
+    pattern:  /login/
+    defaults: { _controller: SampleAdminBundle:Default:login }
+    methods:  [GET]
+
+# ログインチェック
+admin_login:
+    pattern:  /login_check/
+    defaults: { _controller: SampleAdminBundle:Default:loginCheck }
+    methods:  [GET,POST]
+
+# ログアウト
+admin_logout:
+    pattern:  /logout/
+    defaults: { _controller: SampleAdminBundle:Default:logout }
+    methods:  [GET]
+
+# お問い合わせ一覧
+admin_top:
+    pattern:  /
+    defaults: { _controller: SampleAdminBundle:Default:index }
+    methods:  [GET]

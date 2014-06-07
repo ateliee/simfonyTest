@@ -1,0 +1,20 @@
+{% extends '@SampleAdmin/Default/base.html.twig' %}
+
+{% block body %}
+    <h1>最新の記事<h1>
+
+    {{ dump(contacts) }}
+
+    {% for item in contacts %}
+        <a href="{{ path('admin_top', {'id': item.id}) }}">
+            {{ item.title }}
+        </a>
+    {% endfor %}
+
+    {% for article in articles %}
+        {{ include(
+        '@SampleAdmin/Default/contactParts.html.twig'
+        { 'article': article }
+        ) }}
+    {% endfor %}
+{% endblock %}

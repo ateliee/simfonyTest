@@ -1,0 +1,12 @@
+sample_admin:
+    resource: "@SampleAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+sample_contact:
+    resource: "@SampleContactBundle/Resources/config/routing.yml"
+    prefix:   /contact
+
+
+acme_hello:
+    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+    prefix:   /

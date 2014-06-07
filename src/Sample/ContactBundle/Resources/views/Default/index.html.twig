@@ -1,0 +1,18 @@
+
+{# src/Acme/HelloBundle/Resources/views/Hello/index.html.twig #}
+ {% extends 'SampleContactBundle:Default:base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('/css/contact.css') }}" rel="stylesheet" />
+{% endblock %}
+ {% block body %}
+お問い合わせ
+     {# これはコメントです #}
+     <a href="{{ path('admin_top') }}">管理画面を見る</a>
+     {% for i in 0..10 %}
+         <div class="{{ cycle(['odd', 'even'], i) }}">
+             <!-- 何らかの HTML コード -->
+         </div>
+     {% endfor %}
+ {% endblock %}

@@ -1,0 +1,30 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title "Hello " ~ name %}
+
+{% block content %}
+    <h1>Hello {{ name }}!</h1>
+{% endblock %}
+
+{% set code = code(_self) %}
+
+
+    {# array('name' => 'Fabien') #}
+    {{ name }}
+
+    {# array('user' => array('name' => 'Fabien')) #}
+    {{ user.name }}
+
+    {# 配列要素の参照を明示的に指定 #}
+    {{ user['name'] }}
+
+    {# array('user' => new User('Fabien')) #}
+    {{ user.name }}
+    {{ user.getName }}
+
+    {# メソッド名での参照を明示的に指定 #}
+    {{ user.name() }}
+    {{ user.getName() }}
+
+    {# メソッドへ引数を渡す #}
+    {{ user.date('Y-m-d') }}

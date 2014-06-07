@@ -1,0 +1,4 @@
+contact_top:
+    pattern:  /
+    defaults: { _controller: SampleContactBundle:Default:index }
+    methods:  [GET,POST]
