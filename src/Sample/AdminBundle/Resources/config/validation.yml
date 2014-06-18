@@ -1,0 +1,47 @@
+Sample\AdminBundle\Entity\Contact:
+    properties:
+        name:
+            - NotBlank: ~
+        mail:
+            - NotBlank: ~
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                checkMX: true
+        mail_co:
+            - NotBlank: ~
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                checkMX: true
+        contact_details:
+            - NotBlank: ~
+        message:
+            - NotBlank: ~
+        file_path:
+            - File:
+        date:
+            - NotBlank: ~
+            - DateTime: ~
+Sample\AdminBundle\Entity\ContactDetails:
+    properties:
+        message:
+            - NotBlank: ~
+        user:
+            - NotBlank: ~
+Sample\AdminBundle\Entity\Users:
+    properties:
+        login_id:
+            - NotBlank: ~
+        login_password:
+            - NotBlank: ~
+        salt:
+            - NotBlank: ~
+        name:
+            - NotBlank: ~
+        create:
+            - NotBlank: ~
+            - DateTime: ~
+                message: The date is not a valid datetime.
+        update:
+            - NotBlank: ~
+            - DateTime: ~
+                message: The date is not a valid datetime.

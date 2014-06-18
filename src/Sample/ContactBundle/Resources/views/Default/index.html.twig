@@ -6,10 +6,55 @@
     {{ parent() }}
     <link href="{{ asset('/css/contact.css') }}" rel="stylesheet" />
 {% endblock %}
- {% block body %}
-お問い合わせ
+{% block body %}
+    <h1>お問い合わせ</h1>
+    <p>下記項目を入力し、送信ボタンをクリックして下さい。</p>
+
+    <form action="{{ path('contact_top') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+        {{ form_errors(form) }}
+        <div class="control-group">
+            {{ form_label(form.name, '氏名', { 'label_attr': {'class': 'control-label'}}) }}
+            <div class="controls">
+                {{ form_widget(form.name) }}
+            </div>
+        </div>
+        <div class="control-group">
+            {{ form_label(form.mail, 'メールアドレス', { 'label_attr': {'class': 'control-label'}}) }}
+            <div class="controls">
+                {{ form_widget(form.mail) }}
+            </div>
+        </div>
+        <div class="control-group">
+            {{ form_label(form.mail_co, 'メールアドレス(確認)', { 'label_attr': {'class': 'control-label'}}) }}
+            <div class="controls">
+                {{ form_widget(form.mail_co) }}
+            </div>
+        </div>
+        <div class="control-group">
+            {{ form_label(form.contact_details, 'メッセージ', { 'label_attr': {'class': 'control-label'}}) }}
+            <div class="controls">
+                {{ form_widget(form.contact_details) }}
+            </div>
+        </div>
+        <div class="control-group">
+            {{ form_label(form.file_path, '添付ファイル', { 'label_attr': {'class': 'control-label'}}) }}
+            <div class="controls">
+                {{ form_widget(form.file_path) }}
+            </div>
+        </div>
+        {{ form_rest(form) }}
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">送信</button>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
      {# これはコメントです #}
-     <a href="{{ path('admin_top') }}">管理画面を見る</a>
      {% for i in 0..10 %}
          <div class="{{ cycle(['odd', 'even'], i) }}">
              <!-- 何らかの HTML コード -->

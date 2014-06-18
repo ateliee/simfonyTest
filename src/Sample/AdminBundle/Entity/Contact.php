@@ -3,9 +3,10 @@
 namespace Sample\AdminBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
-* @ORM\Entity(repositoryClass="Sample\AdminBundle\Repository\ContactRepository")
+* @ORM\Entity
 * @ORM\Table(name="contact")
 */
 class Contact
@@ -26,6 +27,7 @@ class Contact
     * @ORM\Column(type="string", length=255, nullable=false)
     */
     protected $mail;
+    protected $mail_co;
 
     /**
     * @ORM\Column(type="integer", nullable=false)
@@ -40,17 +42,17 @@ class Contact
     protected $message;
 
     /**
-    * @ORM\Column(type="string", length=255)
+    * @ORM\Column(type="string", length=255, nullable=true)
     */
     protected $file_path;
 
     /**
-    * @ORM\Column(type="datetime", nullable=false)
+    * @ORM\Column(type="datetime")
     */
     protected $date;
 
     /**
-    * @ORM\Column(type="datetime")
+    * @ORM\Column(type="datetime", nullable=true)
     */
     protected $relay_date;
 
@@ -108,6 +110,29 @@ class Contact
     public function getMail()
     {
         return $this->mail;
+    }
+
+    /**
+     * Set mail_co
+     *
+     * @param string $mail
+     * @return Contact
+     */
+    public function setMailCo($mail_co)
+    {
+        $this->mail_co = $mail_co;
+
+        return $this;
+    }
+
+    /**
+     * Get mail_co
+     *
+     * @return string
+     */
+    public function getMailCo()
+    {
+        return $this->mail_co;
     }
 
     /**

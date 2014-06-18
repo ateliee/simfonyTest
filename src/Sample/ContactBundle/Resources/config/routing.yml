@@ -2,3 +2,7 @@ contact_top:
     pattern:  /
     defaults: { _controller: SampleContactBundle:Default:index }
     methods:  [GET,POST]
+contact_success:
+    pattern:  /success/
+    defaults: { _controller: SampleContactBundle:Default:success }
+    methods:  [GET,POST]
