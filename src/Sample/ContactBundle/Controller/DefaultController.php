@@ -26,7 +26,7 @@ class DefaultController extends Controller
         //$product->setName('Test product');
         //$product->setMail('sample@test.com');
 
-        $form = $this->createForm(new ContactType());
+        $form = $this->createForm(new ContactType(), $contact);
         /*$form = $this->createFormBuilder($contact)
             ->add('name', 'text',array('attr' => array('class' => 'input-xxlarge','placeholder' => '氏名')))
             ->add('mail', 'email',array("required" => true,'attr' => array('class' => 'input-xxlarge','placeholder' => 'メールアドレス')))

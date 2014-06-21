@@ -22,8 +22,10 @@ class ContactType extends AbstractType
         $builder->add('mail', 'email',array("required" => true,'attr' => array('class' => 'input-xxlarge','placeholder' => 'メールアドレス')));
         $builder->add('mail_co', 'email',array("required" => true,'attr' => array('class' => 'input-xxlarge','placeholder' => 'メールアドレス(確認)')));
         $builder->add('contact_details',
-            new ContactDetailsType(),
+//            new ContactDetailsType(),
+            "entity",
             array(
+            'class' => 'SampleAdminBundle:ContactDetails',
             "required" => true,
             "empty_value" => "選択してください",
             'attr' => array('class' => 'select')
