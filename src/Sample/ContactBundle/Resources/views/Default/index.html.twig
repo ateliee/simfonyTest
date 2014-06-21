@@ -31,9 +31,15 @@
             </div>
         </div>
         <div class="control-group">
-            {{ form_label(form.contact_details, 'メッセージ', { 'label_attr': {'class': 'control-label'}}) }}
+            {{ form_label(form.contact_details, 'お問い合わせ内容', { 'label_attr': {'class': 'control-label'}}) }}
             <div class="controls">
                 {{ form_widget(form.contact_details) }}
+            </div>
+        </div>
+        <div class="control-group">
+            {{ form_label(form.message, 'メッセージ', { 'label_attr': {'class': 'control-label'}}) }}
+            <div class="controls">
+                {{ form_widget(form.message) }}
             </div>
         </div>
         <div class="control-group">

@@ -22,7 +22,7 @@ class ContactDetails
     /**
      * @ORM\Column(type="string", length=128, nullable=false)
      */
-    private $message;
+    private $name;
 
     /**
      * @ORM\Column(type="bigint", nullable=false)
@@ -42,29 +42,6 @@ class ContactDetails
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set message
-     *
-     * @param string $message
-     * @return ContactDetails
-     */
-    public function setMessage($message)
-    {
-        $this->message = $message;
-    
-        return $this;
-    }
-
-    /**
-     * Get message
-     *
-     * @return string 
-     */
-    public function getMessage()
-    {
-        return $this->message;
     }
 
     /**
@@ -88,5 +65,28 @@ class ContactDetails
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return ContactDetails
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 }
