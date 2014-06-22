@@ -139,4 +139,6 @@ class DefaultController extends Controller
             'error'         => $error,
         ));
     }
+    public function loginCheckAction(Request $request){
+    }
 }

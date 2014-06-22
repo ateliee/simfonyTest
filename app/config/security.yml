@@ -5,6 +5,9 @@ security:
             encode_as_base64: false
             iterations: 1
 
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+
     providers:
         admin:
             entity:
@@ -14,7 +17,7 @@ security:
     firewalls:
         # 管理者エリアのログイン画面のみセキュリティを無効に設定
         admin_area_login:
-            pattern:  ^/admin/login$
+            pattern:  ^/admin/login
             security: false
         admin_area:
             provider:   admin
@@ -25,7 +28,7 @@ security:
                 check_path:  /admin/login_check
 
     access_control:
-        - { path: ^/admin/login/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/login_check, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/logout, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin, roles: ROLE_ADMIN }
