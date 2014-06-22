@@ -57,17 +57,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subjectsNew.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/subjectsNew.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="45" selection-start="457" selection-end="457" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <marker date="1403366416000" expanded="true" signature="125:948" placeholder="{% block body ...%}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SubjectsType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sample/ContactBundle/Form/Type/SubjectsType.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,7 +98,16 @@
       <file leaf-file-name="security.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.5600649" vertical-offset="0" max-vertical-offset="616">
+            <state line="23" column="30" selection-start="602" selection-end="602" vertical-scroll-proportion="0.5600649" vertical-offset="0" max-vertical-offset="616">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.log" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="692" column="45" selection-start="117518" selection-end="117518" vertical-scroll-proportion="688.2" vertical-offset="27585" max-vertical-offset="503100">
               <folding />
             </state>
           </provider>
@@ -119,10 +117,7 @@
         <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="16" selection-start="728" selection-end="728" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
-              <folding>
-                <element signature="e#78#118#0" expanded="true" />
-                <element signature="e#267#284#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +126,10 @@
         <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="0" selection-start="336" selection-end="351" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300">
-              <folding />
+              <folding>
+                <element signature="e#78#118#0" expanded="false" />
+                <element signature="e#243#252#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/logs/dev.log" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
       </list>
     </option>
@@ -616,6 +615,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -736,16 +753,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Sample/ContactBundle/Form/Type/ContactType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="540">
-          <folding>
-            <element signature="e#6#88#0" expanded="true" />
-            <element signature="e#133#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sample/ContactBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="43" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1020">
@@ -815,8 +822,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="5" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="540">
           <folding>
-            <element signature="e#6#88#0" expanded="true" />
-            <element signature="e#133#173#0" expanded="true" />
+            <element signature="e#6#88#0" expanded="false" />
+            <element signature="e#133#173#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -977,7 +984,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="45" selection-start="457" selection-end="457" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="510">
           <folding>
-            <marker date="1403366416000" expanded="true" signature="125:948" placeholder="{% block body ...%}" />
+            <marker date="1403366416000" expanded="true" signature="-1:-1" placeholder="{% block body ...%}" />
           </folding>
         </state>
       </provider>
@@ -1021,8 +1028,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="50" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.49029127" vertical-offset="102" max-vertical-offset="720">
           <folding>
-            <element signature="e#6#88#0" expanded="true" />
-            <element signature="e#133#173#0" expanded="true" />
+            <element signature="e#6#88#0" expanded="false" />
+            <element signature="e#133#173#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,7 +1054,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="43" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1440">
           <folding>
-            <element signature="e#45#77#0" expanded="true" />
+            <element signature="e#45#77#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1080,17 +1087,17 @@
     <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="336" selection-end="351" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300">
-          <folding />
+          <folding>
+            <element signature="e#78#118#0" expanded="false" />
+            <element signature="e#243#252#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="16" selection-start="728" selection-end="728" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <element signature="e#78#118#0" expanded="true" />
-            <element signature="e#267#284#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,9 +1124,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="692" column="45" selection-start="117518" selection-end="117518" vertical-scroll-proportion="688.2" vertical-offset="27585" max-vertical-offset="503100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.5600649" vertical-offset="0" max-vertical-offset="616">
+        <state line="23" column="30" selection-start="602" selection-end="602" vertical-scroll-proportion="0.5600649" vertical-offset="0" max-vertical-offset="616">
           <folding />
         </state>
       </provider>

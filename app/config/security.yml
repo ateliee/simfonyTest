@@ -6,14 +6,18 @@ security:
             iterations: 1
 
     providers:
-        administrators:
-            entity: { class: SampleAdminBundle:User }
+        admin:
+            entity:
+                class: Sample\AdminBundle\Entity\User
+                property: username
 
     firewalls:
-        login_firewall:
-            pattern:    ^/admin/login$
-            anonymous:  ~
+        # 管理者エリアのログイン画面のみセキュリティを無効に設定
+        admin_area_login:
+            pattern:  ^/admin/login$
+            security: false
         admin_area:
+            provider:   admin
             pattern:    ^/admin
             #http_basic: ~
             form_login:
