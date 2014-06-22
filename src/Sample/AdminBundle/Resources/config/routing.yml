@@ -59,14 +59,14 @@ admin_login:
     methods:  [GET]
 
 # ログインチェック
-admin_login:
-    pattern:  /login_check/
+admin_login_check:
+    pattern:  /login_check
     defaults: { _controller: SampleAdminBundle:Default:loginCheck }
     methods:  [GET,POST]
 
 # ログアウト
 admin_logout:
-    pattern:  /logout/
+    pattern:  /logout
     defaults: { _controller: SampleAdminBundle:Default:logout }
     methods:  [GET]
 

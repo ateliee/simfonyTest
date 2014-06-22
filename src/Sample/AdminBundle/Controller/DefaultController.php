@@ -4,6 +4,7 @@ namespace Sample\AdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\SecurityContext;
 use Sample\AdminBundle\Entity;
 use Sample\AdminBundle\Entity\Subjects;
 
@@ -121,7 +122,7 @@ class DefaultController extends Controller
     {
         return $this->render('SampleAdminBundle:Default:subjectsEdit.html.twig', array('id' => $id));
     }
-    public  function loginAction(){
+    public function loginAction(){
         $request = $this->getRequest();
         $session = $request->getSession();
 
@@ -132,7 +133,7 @@ class DefaultController extends Controller
             $error = $session->get(SecurityContext::AUTHENTICATION_ERROR);
         }
 
-        return $this->render('AcmeSecurityBundle:Security:login.html.twig', array(
+        return $this->render('SampleAdminBundle:Default:login.html.twig', array(
             // ユーザによって前回入力された username
             'last_username' => $session->get(SecurityContext::LAST_USERNAME),
             'error'         => $error,

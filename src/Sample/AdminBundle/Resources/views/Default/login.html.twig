@@ -1,18 +1,21 @@
-{% if error %}
-    <div>{{ error.message }}</div>
-{% endif %}
+{# src/Acme/HelloBundle/Resources/views/Hello/index.html.twig #}
+ {% extends 'SampleAdminBundle:Default:base.html.twig' %}
 
-<form action="{{ path('login_check') }}" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" />
+{% block body %}
+<div class="container">
+    {% if error %}
+        <div>{{ error.message }}</div>
+    {% endif %}
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="_password" />
+    <form action="{{ path('admin_login_check') }}" class="form-signin" role="form" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="username" value="{{ last_username }}" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
 
-    {#
-        認証成功した際のリダイレクト URL を制御したい場合(詳細は以下に説明する)
-        <input type="hidden" name="_target_path" value="/account" />
-    #}
-
-    <input type="submit" name="login" />
-</form>
+</div> <!-- /container -->
+{% endblock %}

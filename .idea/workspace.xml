@@ -68,15 +68,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SubjectsType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sample/ContactBundle/Form/Type/SubjectsType.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,17 +91,16 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="35" selection-start="4041" selection-end="4041" vertical-scroll-proportion="-14.5" vertical-offset="1497" max-vertical-offset="2205">
+            <state line="6" column="52" selection-start="205" selection-end="205" vertical-scroll-proportion="0.5" vertical-offset="102" max-vertical-offset="2220">
               <folding>
-                <element signature="e#49#106#0" expanded="true" />
-                <element signature="e#386#429#0" expanded="true" />
-                <element signature="e#607#634#1" expanded="true" />
-                <element signature="e#795#840#0" expanded="true" />
-                <element signature="e#1857#1900#0" expanded="true" />
-                <element signature="e#2001#2047#1" expanded="true" />
-                <element signature="e#3729#3778#0" expanded="true" />
-                <element signature="e#3927#3977#0" expanded="true" />
-                <element signature="e#4454#4499#0" expanded="true" />
+                <element signature="e#439#482#0" expanded="true" />
+                <element signature="e#660#687#1" expanded="true" />
+                <element signature="e#848#893#0" expanded="true" />
+                <element signature="e#1910#1953#0" expanded="true" />
+                <element signature="e#2054#2100#1" expanded="true" />
+                <element signature="e#3782#3831#0" expanded="true" />
+                <element signature="e#3980#4030#0" expanded="true" />
+                <element signature="e#4506#4549#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +109,7 @@
       <file leaf-file-name="security.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="263" selection-end="352" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="616">
+            <state line="23" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.5600649" vertical-offset="0" max-vertical-offset="616">
               <folding />
             </state>
           </provider>
@@ -128,7 +118,19 @@
       <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="535" selection-end="535" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+            <state line="15" column="16" selection-start="728" selection-end="728" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
+              <folding>
+                <element signature="e#78#118#0" expanded="true" />
+                <element signature="e#267#284#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="336" selection-end="351" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -164,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/Sample/ContactBundle/Resources/views/Default/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/subjects.html.twig" />
         <option value="$PROJECT_DIR$/web/css/admin.css" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/subjects_new.html.twig" />
@@ -179,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Entity/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
       </list>
@@ -634,6 +636,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config" />
       <recent name="$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/src/Sample/ContactBundle/Resources/views/Default" />
     </key>
@@ -956,15 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="618">
-          <folding>
-            <element signature="e#78#118#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="14" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
@@ -1007,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="518" selection-end="536" vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sample/ContactBundle/Form/Type/SubjectsType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="63" selection-start="603" selection-end="603" vertical-scroll-proportion="-8.583333" vertical-offset="109" max-vertical-offset="870">
@@ -1037,13 +1024,6 @@
             <element signature="e#6#88#0" expanded="true" />
             <element signature="e#133#173#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,30 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="35" selection-start="4041" selection-end="4041" vertical-scroll-proportion="-14.5" vertical-offset="1497" max-vertical-offset="2205">
-          <folding>
-            <element signature="e#49#106#0" expanded="true" />
-            <element signature="e#386#429#0" expanded="true" />
-            <element signature="e#607#634#1" expanded="true" />
-            <element signature="e#795#840#0" expanded="true" />
-            <element signature="e#1857#1900#0" expanded="true" />
-            <element signature="e#2001#2047#1" expanded="true" />
-            <element signature="e#3729#3778#0" expanded="true" />
-            <element signature="e#3927#3977#0" expanded="true" />
-            <element signature="e#4454#4499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="535" selection-end="535" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Entity/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="1" selection-start="461" selection-end="461" vertical-scroll-proportion="-1.25" vertical-offset="135" max-vertical-offset="825">
@@ -1114,9 +1070,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="17" selection-start="1355" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="336" selection-end="351" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Resources/views/Default/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="728" selection-end="728" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
+          <folding>
+            <element signature="e#78#118#0" expanded="true" />
+            <element signature="e#267#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sample/AdminBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="205" selection-end="205" vertical-scroll-proportion="0.5" vertical-offset="102" max-vertical-offset="2220">
+          <folding>
+            <element signature="e#439#482#0" expanded="true" />
+            <element signature="e#660#687#1" expanded="true" />
+            <element signature="e#848#893#0" expanded="true" />
+            <element signature="e#1910#1953#0" expanded="true" />
+            <element signature="e#2054#2100#1" expanded="true" />
+            <element signature="e#3782#3831#0" expanded="true" />
+            <element signature="e#3980#4030#0" expanded="true" />
+            <element signature="e#4506#4549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="263" selection-end="352" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="616">
+        <state line="23" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.5600649" vertical-offset="0" max-vertical-offset="616">
           <folding />
         </state>
       </provider>
