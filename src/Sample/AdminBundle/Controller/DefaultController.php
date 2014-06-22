@@ -3,7 +3,9 @@
 namespace Sample\AdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Sample\AdminBundle\Entity;
+use Sample\AdminBundle\Entity\Subjects;
 
 class DefaultController extends Controller
 {
@@ -65,8 +67,40 @@ class DefaultController extends Controller
     {
         return $this->render('SampleAdminBundle:Default:subjects.html.twig');
     }
-    public function subjectsNewAction()
+    public function subjectsNewAction(Request $request)
     {
+        // Productオブジェクトを作成し、ダミーデータを設定する
+        $subjects = new Subjects();
+        //$product->setName('Test product');
+        //$product->setMail('sample@test.com');
+
+        $form = $this->createFormBuilder($subjects)
+            ->add('name', 'text',array('attr' => array('class' => 'form-control','placeholder' => '名前')))
+            ->getForm();
+
+        if ($request->getMethod() == 'POST') {
+            $user = $this->getUser();
+            print_r ($user);
+            exit;
+            $request->request->set("user",$user);
+            $form->bind($request);
+
+            if ($form->isValid()) {
+                // データベースへの保存など、何らかのアクションを実行する
+                $em = $this->get('doctrine')->getEntityManager();
+                $em->persist($subjects);
+                $em->flush();
+                //$product = $form->getData();
+                // データベースへの保存など、何らかのアクションを実行する
+                //$em = $this->get('doctrine')->getEntityManager();
+                //$em->persist($contact);
+                //$em->flush();
+
+                //$form['attachment']->getData()->move($dir, $someNewFilename);
+
+                return $this->redirect($this->generateUrl('admin_subjects'));
+            }
+        }
         /*
         $product = new ContactDetails();
         $product->setName('A Foo Bar');
@@ -79,10 +113,29 @@ class DefaultController extends Controller
 
         return new Response('Created product id '.$product->getId());
 */
-        return $this->render('SampleAdminBundle:Default:subjectsNew.html.twig');
+        return $this->render('SampleAdminBundle:Default:subjectsNew.html.twig', array(
+            'form' => $form->createView(),
+        ));
     }
     public function subjectsEditAction($id)
     {
         return $this->render('SampleAdminBundle:Default:subjectsEdit.html.twig', array('id' => $id));
+    }
+    public  function loginAction(){
+        $request = $this->getRequest();
+        $session = $request->getSession();
+
+        // ログインエラーがあれば、ここで取得
+        if ($request->attributes->has(SecurityContext::AUTHENTICATION_ERROR)) {
+            $error = $request->attributes->get(SecurityContext::AUTHENTICATION_ERROR);
+        } else {
+            $error = $session->get(SecurityContext::AUTHENTICATION_ERROR);
+        }
+
+        return $this->render('AcmeSecurityBundle:Security:login.html.twig', array(
+            // ユーザによって前回入力された username
+            'last_username' => $session->get(SecurityContext::LAST_USERNAME),
+            'error'         => $error,
+        ));
     }
 }

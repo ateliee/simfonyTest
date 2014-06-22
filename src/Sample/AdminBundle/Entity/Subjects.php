@@ -7,15 +7,14 @@ use Doctrine\Common\Collections\ArrayCollection;
 
 /**
 * @ORM\Entity
-* @ORM\Table(name="contact_details")
+* @ORM\Table(name="subjects")
 */
-class ContactDetails
+class Subjects
 {
     /**
      * @ORM\Id
      * @ORM\Column(type="bigint")
      * @ORM\GeneratedValue(strategy="AUTO")
-     * @ORM\OneToMany(targetEntity="Contact", mappedBy="contact_details")
      */
     private $id;
 
@@ -48,7 +47,7 @@ class ContactDetails
      * Set user
      *
      * @param integer $user
-     * @return ContactDetails
+     * @return Subjects
      */
     public function setUser($user)
     {

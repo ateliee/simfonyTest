@@ -16,7 +16,7 @@ admin_reply:
 
 # 内容一覧
 admin_subjects:
-    pattern:  /subjects/{id}
+    pattern:  /subjects/
     defaults: { _controller: SampleAdminBundle:Default:subjects }
     methods:  [GET]
     requirements:
@@ -24,7 +24,7 @@ admin_subjects:
 
 # 内容登録
 admin_subjects_new:
-    pattern:  /subjects/{id}
+    pattern:  /subjects/new
     defaults: { _controller: SampleAdminBundle:Default:subjectsNew }
     methods:  [GET,POST]
     requirements:
@@ -73,5 +73,5 @@ admin_logout:
 # お問い合わせ一覧
 admin_top:
     pattern:  /
-    defaults: { _controller: SampleAdminBundle:Default:index }
+    defaults: { _controller: SampleAdminBundle:Default:index, page:1 }
     methods:  [GET]

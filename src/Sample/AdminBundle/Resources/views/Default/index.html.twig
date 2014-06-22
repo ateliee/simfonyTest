@@ -1,4 +1,5 @@
-{% extends '@SampleAdmin/Default/base.html.twig' %}
+{# src/Acme/HelloBundle/Resources/views/Hello/index.html.twig #}
+ {% extends 'SampleAdminBundle:Default:base.html.twig' %}
 
 {% block body %}
     <h1>最新の記事<h1>
@@ -11,10 +12,4 @@
         </a>
     {% endfor %}
 
-    {% for article in articles %}
-        {{ include(
-        '@SampleAdmin/Default/contactParts.html.twig'
-        { 'article': article }
-        ) }}
-    {% endfor %}
 {% endblock %}

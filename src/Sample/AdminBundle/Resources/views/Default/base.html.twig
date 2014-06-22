@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}お問い合わせ{% endblock %}</title>
+    {% block stylesheets %}
+
+        <link href="{{ asset('bootstrap/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/admin.css') }}" rel="stylesheet" />
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+            }
+        </style>
+    {% endblock %}
+    {% block javascripts %}
+        <script type="text/javascripy" src="bootstrap/js/bootstrap.js"></script>
+        <link href="{{ asset('js/scripts.css') }}" rel="stylesheet" type="text/css">
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+
 </head>
 <body>
-{% block body %}{% endblock %}
-{% block javascripts %}{% endblock %}
+
+{% block header %}
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{ path('contact_top') }}">HomePage</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<div class="container">
+    {% block body %}{% endblock %}
+</div> <!-- /container -->
 </body>
 </html>

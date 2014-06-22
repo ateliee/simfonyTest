@@ -8,16 +8,16 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Contact Details Form Type
+ * Subjects Form Type
  */
-class ContactDetailsType extends AbstractType
+class SubjectsType extends AbstractType
 {
     public function getDefaultOptions(OptionsResolverInterface $resolver)
     {
 
-        $contact_details = $this->getDoctrine()
-            ->getRepository('SampleAdminBundle:ContactDetails');
-        $results = $contact_details->findAll();
+        $subjects = $this->getDoctrine()
+            ->getRepository('SampleAdminBundle:Subjects');
+        $results = $subjects->findAll();
 /*
         $results = $this->om->getRepository('SampleAdminBundle:ContactDetails')
             ->createQueryBuilder('a')
@@ -48,6 +48,6 @@ class ContactDetailsType extends AbstractType
 
     public function getName()
     {
-        return 'formtypebundle_contactdetails_type';
+        return 'formtypebundle_subjectstype';
     }
 }

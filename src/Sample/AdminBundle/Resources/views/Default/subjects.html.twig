@@ -1,0 +1,12 @@
+
+{# src/Acme/HelloBundle/Resources/views/Hello/index.html.twig #}
+ {% extends 'SampleAdminBundle:Default:base.html.twig' %}
+
+{% block body %}
+    <div class="page-header clearfix">
+        <h1 class="pull-left">お問い合わせ内容</h1>
+        <div class="right-btn">
+            <a href="{{ path('admin_subjects_new') }}" class="btn btn-default">新規追加</a>
+        </div>
+    </div>
+{% endblock %}

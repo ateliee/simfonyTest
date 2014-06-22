@@ -21,9 +21,9 @@ Sample\AdminBundle\Entity\Contact:
         date:
             - NotBlank: ~
             - DateTime: ~
-Sample\AdminBundle\Entity\ContactDetails:
+Sample\AdminBundle\Entity\Subjects:
     properties:
-        message:
+        name:
             - NotBlank: ~
         user:
             - NotBlank: ~
@@ -39,9 +39,9 @@ Sample\AdminBundle\Entity\Users:
             - NotBlank: ~
         create:
             - NotBlank: ~
-            - DateTime: ~
+            - DateTime:
                 message: The date is not a valid datetime.
         update:
             - NotBlank: ~
-            - DateTime: ~
+            - DateTime:
                 message: The date is not a valid datetime.

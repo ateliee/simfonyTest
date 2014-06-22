@@ -31,10 +31,10 @@ class Contact
 
     /**
     * @ORM\Column(type="integer", nullable=false)
-     * @ORM\ManyToOne(targetEntity="ContactDetails", inversedBy="id")
-     * @ORM\JoinColumn(name="contact_details_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Subjects", inversedBy="id")
+     * @ORM\JoinColumn(name="subjects", referencedColumnName="id")
     */
-    protected $contact_details;
+    protected $subjects;
 
     /**
     * @ORM\Column(type="text", nullable=false)
@@ -136,29 +136,6 @@ class Contact
     }
 
     /**
-     * Set contact_details
-     *
-     * @param integer $contactDetails
-     * @return Contact
-     */
-    public function setContactDetails($contactDetails)
-    {
-        $this->contact_details = $contactDetails;
-    
-        return $this;
-    }
-
-    /**
-     * Get contact_details
-     *
-     * @return integer 
-     */
-    public function getContactDetails()
-    {
-        return $this->contact_details;
-    }
-
-    /**
      * Set message
      *
      * @param string $message
@@ -253,5 +230,28 @@ class Contact
     public function __construct()
     {
         $this->contact_details = new ArrayCollection();
+    }
+
+    /**
+     * Set subjects
+     *
+     * @param integer $subjects
+     * @return Contact
+     */
+    public function setSubjects($subjects)
+    {
+        $this->subjects = $subjects;
+    
+        return $this;
+    }
+
+    /**
+     * Get subjects
+     *
+     * @return integer 
+     */
+    public function getSubjects()
+    {
+        return $this->subjects;
     }
 }

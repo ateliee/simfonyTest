@@ -1,0 +1,29 @@
+
+{# src/Acme/HelloBundle/Resources/views/Hello/index.html.twig #}
+ {% extends 'SampleAdminBundle:Default:base.html.twig' %}
+
+{% block body %}
+    <div class="page-header clearfix">
+        <h1 class="pull-left">お問い合わせ新規追加</h1>
+        <div class="right-btn">
+            <a href="{{ path('admin_subjects_new') }}" class="btn btn-default">新規追加</a>
+        </div>
+    </div>
+
+    <p>下記項目を入力し、送信ボタンをクリックして下さい。</p>
+
+    <form action="{{ path('admin_subjects_new') }}" method="post" {{ form_enctype(form) }} role="form">
+        {{ form_errors(form) }}
+
+        <div class="form-group">
+            {{ form_label(form.name, '名前', { 'label_attr': {'class': ''}}) }}
+            {{ form_widget(form.name) }}
+        </div>
+        {{ form_rest(form) }}
+        <div class="form-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-default">送信</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
