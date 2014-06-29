@@ -39,8 +39,6 @@ class DefaultController extends Controller
         if ($request->getMethod() == 'POST') {
             $form->bind($request);
 
-            echo $form->isValid();
-            exit;
             if ($form->isValid()) {
                 // データベースへの保存など、何らかのアクションを実行する
                 $em = $this->get('doctrine')->getEntityManager();

@@ -17,15 +17,15 @@ security:
     firewalls:
         # 管理者エリアのログイン画面のみセキュリティを無効に設定
         admin_area_login:
-            pattern:  ^/admin/login
+            pattern:  ^/admin/login/$
             security: false
         admin_area:
             provider:   admin
             pattern:    ^/admin
             #http_basic: ~
             form_login:
-                login_path:  /admin/login
-                check_path:  /admin/login_check
+                login_path:  admin_login
+                check_path:  admin_login_check
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
